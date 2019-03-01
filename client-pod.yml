@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metada:
+  name: client-pod
+  labels:
+    component: web
+spec:
+  containers:
+    - name: client
+      image: debora/multi-client
+      ports:
+        - containerPorr: 3000 
